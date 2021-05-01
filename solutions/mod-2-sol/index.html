@@ -6,132 +6,100 @@
 <title>Look at me go!!</title>
 <style>
 
-/********** Base styles **********/
+/********** Style Sheet **********/
 * {
   	box-sizing: border-box;
   	position: relative;
   	width: 100%;
+  	height: 100%;
 }
-
 body{
 	display: table-cell;
-	width: 100%;
-  	height: 100%;
-  	position: relative;
 }
-
-div{
-	width: 100%;
-	height: 100%;
-	position: relative;
+h1 {
+	border: 5px solid black;
+	margin: 1%;
+	width: 98%;
+	text-align: center;
 }
-
-div.row {
-	position: relative;
-	width: 100%;
+p {
+	margin: 1%;
+  	height: 80%;
+  	width: 98%;
+  	overflow: auto;
 }
-
 .container {
 	border: 5px solid black;
 	padding: 5px;
 	background-color: #A52A2A;
-	height:100%;
-	position: relative;
 	font-family: Helvetica;
+	text-align: left;
 	color: white;
-	width: 100%;
-	}
-
-p {
-	font-size: 150%;
-	height: 100%;
-	margin: 10px;
 }
-
 .title-box {
-	border: 1px solid black;
+	border: 3px solid black;
 	background-color: #2AA52A;
-	position: relative;
-	width: 40%;
-	height: 11%;
+	width: 30%;
+	height: 15%;
 	margin: 5px;
 	float: right;
 }
-
 .box-title {
-	width: 100%;
 	font-size: 150%;
-	position: relative;
 	text-align: center;
 	margin: 1px;
-}
-
-h1 {
-	text-align: center;
 }
 
 /********** desktop only **********/
 @media (min-width: 992px) {
   .desktop {
-	float: right;
+	float: left;
+	font-size: 80%;
 	margin: 1%;
-  	height: 300px;
-    	width: 31.33%;
-  }
-  p {
-  	height: 250px;
-  	overflow: auto;
+  	height: 200px;
+    width: 31.33%;
   }
 }
 
 /********** tablet only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .tablet-1, .tablet-2, .tablet-3, .tablet-4, .tablet-5, .tablet-6, .tablet-7, .tablet-8, .tablet-9, .tablet-10, .tablet-11, .tablet-12 {
-	float: right;
+  p {
+  	height: 200px;
+  	font-size: 125%;
+  }
+  .tablet-6, .tablet-12 {
+  	width: 98%;
+	float: left;
 	margin: 1%;
   }
   .tablet-6 {
-  	height: 300px;
-    	width: 40%;
-  }
-  .tablet-12 {
-	height: 100%;
-    	width: 95%;
-  }
-  p {
-  	font-size: 125%;
-   	height: 250px;
-  	overflow: auto;
+    width: 48%;
   }
   .tablet-12 > .container > .title-box {
-  	width: 20%;
+  	width: 15%;
   }
 }
 
-/********** tablet only **********/
+/********** mobile only **********/
 @media (max-width: 767px) {
-  .mobile-1, .mobile-2, .mobile-3, .mobile-4, .mobile-5, .mobile-6, .mobile-7, .mobile-8, .mobile-9, .mobile-10, .mobile-11, .mobile-12 {
-    float: left;
+  .mobile {
+    margin: 1%;
+    width: 98%;
   }
-  .mobile-12 { 
-  	height: 100%;
-    width: 100%;
+  p{
+  	height: 100%
   }
 }
 
-	
-	
-	
-	
-	
-	
+/********************************/
+
 </style>
 </head>
 <body>
 	<h1>BUY FOOD STORE PLACE</h1>
 
 	<div class="row">
-	  <div class="desktop tablet-6 mobile-12">
+	  <div class="desktop tablet-6 mobile">
 	  	<div class="container">
 	  		<div class="title-box">
 	  			<h2 class="box-title">
@@ -143,7 +111,7 @@ h1 {
 			</p>
 	  	</div>
 	  </div>
-	  <div class="desktop tablet-6 mobile-12">
+	  <div class="desktop tablet-6 mobile">
 	  	<div class="container">
 	  		<div class="title-box">
 	  			<h2 class="box-title">
@@ -155,7 +123,7 @@ h1 {
 			</p>
 	  	</div>
 	  </div>
-	  <div class="desktop tablet-12 mobile-12">
+	  <div class="desktop tablet-12 mobile">
 		<div class="container">
 	  		<div class="title-box">
 	  			<h2 class="box-title">
